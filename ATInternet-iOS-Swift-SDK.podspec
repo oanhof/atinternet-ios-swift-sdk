@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 		appExt.pod_target_xcconfig		= { 'OTHER_SWIFT_FLAGS' => '-DAT_EXTENSION' }
 		appExt.source_files           = "Tracker/Tracker/*.{h,m,swift}"
 		appExt.exclude_files          = "Tracker/Tracker/BackgroundTask.{swift}"
-		appExt.frameworks             = "CoreData", "CoreFoundation", "WatchKit", "UIKit", "CoreTelephony", "SystemConfiguration"
+		appExt.frameworks             = "CoreData", "CoreFoundation", "UIKit", "CoreTelephony", "SystemConfiguration"
 		appExt.dependency s.name+'/Res'
 	end
   
